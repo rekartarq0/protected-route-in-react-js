@@ -1,18 +1,17 @@
-import React from 'react'
-import { Navigate, Outlet } from 'react-router-dom'
-import { useContextprovider } from '../Context/ContextProvider'
+import React from "react";
+import { Navigate, Outlet } from "react-router-dom";
+import { useContextprovider } from "../Context/ContextProvider";
 
 const Guest = () => {
   const { token } = useContextprovider();
   if (token) {
-    return <Navigate to="/"/>
+    return <Navigate to="/" />;
   }
   return (
     <div>
-      
-      <Outlet/>
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Guest
+export default Guest;

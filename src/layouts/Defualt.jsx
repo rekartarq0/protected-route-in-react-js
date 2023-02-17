@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, Outlet } from 'react-router-dom'
+import { Link, Navigate, Outlet } from 'react-router-dom'
 import { useContextprovider } from "../Context/ContextProvider";
 const Defualt = () => {
   // eslint-disable-next-line no-unused-vars
@@ -9,9 +9,14 @@ const Defualt = () => {
   }
   return (
     <div>
-      <Outlet/>
+      <aside>
+        <Link to="/dashboard">dashboard</Link>
+        <Link to="/user">dashboard</Link>
+        <Link to="/dashboard">dashboard</Link>
+      </aside>
+      <Outlet />
     </div>
-  )
+  );
 }
 
 export default Defualt

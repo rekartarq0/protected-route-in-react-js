@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element:<Navigate to="/user"/>
       },
       {
-        path: "/dasboard",
+        path: "/dashboard",
         element: <Dasboard />,
       },
       {
